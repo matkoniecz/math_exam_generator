@@ -8,7 +8,7 @@ myexam.add_section("Linear equations", 20, "Linear equations",
                    "Solve the following equations for the specified variable.")
 myexam.add_section("Quadratic equations", 20, "Quadratic equations",
                    "Solve the following quadratic equations.")
-myexam.add_section(make_quotient_rule_prob,10, "Compute the derivative", ["x", "y", "z"])
+myexam.add_section(make_quotient_rule_prob,10, "Differentiation", "Compute the derivative", ["x", "y", "z"])
 
 # generate the exam and solutions pdf
 myexam.write()
