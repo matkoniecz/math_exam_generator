@@ -1,10 +1,11 @@
 import os
 from lib import doc_parts, section_parts
-from lib import make_quadratic_eq, make_linear_eq, make_rational_poly_simplify
+from lib import make_quadratic_eq, make_linear_eq, make_simple_linear_eq, make_rational_poly_simplify
 from lib import make_poly_ratio_limit, make_chain_rule_prob
 
 _problems_map = {"Quadratic equations" : make_quadratic_eq,
                  "Linear equations" : make_linear_eq,
+                 "Simple linear equations": make_simple_linear_eq,
                  "Simplify quadratic ratio" : make_rational_poly_simplify,
                  "Limit of polynomial ratio" : make_poly_ratio_limit}
 

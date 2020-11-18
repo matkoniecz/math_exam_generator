@@ -51,7 +51,10 @@ def make_quadratic_eq(var="x", rhs = None, integer=[0, 1]):
         return make_quadratic_eq()
     return render(e), sols
 
-def make_linear_eq(x="", rhs = None, var_coeffs=True):
+def make_simple_linear_eq():
+    return make_linear_eq(prefilled_possible_unknowns=["x"], rhs = None, var_coeffs=False)
+
+def make_linear_eq(prefilled_possible_unknowns=None, rhs = None, var_coeffs=True):
     """
     Generates linear equation in one variable, and its solution.
 
@@ -67,10 +70,13 @@ def make_linear_eq(x="", rhs = None, var_coeffs=True):
                  defaults to True. Set to False if you want a problem with strictly
                  numerical coefficients.
     """
-    if not x:
+    x = None
+    if not prefilled_possible_unknowns:
         x = random.choice(alpha)
-    elif isinstance(x, list):
-        x = random.choice(x)
+    elif isinstance(prefilled_possible_unknowns, list):
+        x = random.choice(prefilled_possible_unknowns)
+    else:
+        raise BaseException("impossible")
 
     exclude = [x.upper(), x.lower()]
     x = sympy.Symbol(x)
