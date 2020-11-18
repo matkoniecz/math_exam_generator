@@ -53,9 +53,9 @@ def section_parts(title, instr="", cols = 2):
         section_start="""
         \\section{%s}
         %s
-        \\begin{multicols}{1}
+        \\begin{multicols}{%s}
         \\begin{enumerate}
-        """ % (title, instr)
+        """ % (title, instr, str(cols))
 
         section_end="""
         \\end{enumerate}
