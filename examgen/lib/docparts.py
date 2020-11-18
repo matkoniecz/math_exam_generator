@@ -1,7 +1,7 @@
 def doc_parts(title="", author=""):
     start="""
     \documentclass{article}
-    \usepackage{amsfonts}
+    \usepackage{amsfonts}""" + magic_incantation_to_allow_polish_letters() + """
     \usepackage{amsmath,multicol,eso-pic}
     \\begin{document}
     """
@@ -17,7 +17,7 @@ def doc_parts(title="", author=""):
 def exam_parts(title="", author=""):
     start="""
     \\documentclass{exam}
-    \\usepackage{amsfonts}
+    \\usepackage{amsfonts}""" + magic_incantation_to_allow_polish_letters() + """
     \\usepackage{amsmath,multicol,eso-pic}
     \\noprintanswers
     \\addpoints 
@@ -47,6 +47,14 @@ def exam_parts(title="", author=""):
     \end{document}
     """
     return start, end
+
+def magic_incantation_to_allow_polish_letters():
+    # as UTF8 is not supported by default a special incantation is needed
+    # https://tex.stackexchange.com/questions/268824/ways-to-input-special-characters-polish-alphabet#268854
+    return """
+    \\usepackage[T1]{fontenc}
+    \\usepackage[polish]{babel}
+    \\usepackage[utf8]{inputenc}"""
 
 def section_parts(title, instr="", cols = 2):
     if cols >= 2:
