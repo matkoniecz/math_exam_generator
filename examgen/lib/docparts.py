@@ -2,9 +2,9 @@ from __future__ import print_function
 
 def doc_parts(title="", author=""):
     start="""
-    \documentclass{article}
-    \usepackage{amsfonts}""" + magic_incantation_to_allow_polish_letters() + """
-    \usepackage{amsmath,multicol,eso-pic}
+    \\documentclass{article}
+    \\usepackage{amsfonts}""" + magic_incantation_to_allow_polish_letters() + """
+    \\usepackage{amsmath,multicol,eso-pic}
     \\begin{document}
     """
 
