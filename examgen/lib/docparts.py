@@ -5,6 +5,7 @@ def doc_parts(title="", author=""):
     \\documentclass{article}
     \\usepackage{amsfonts}""" + magic_incantation_to_allow_polish_letters() + """
     \\usepackage{amsmath,multicol,eso-pic}
+    \\usepackage[a4paper, total={6.5in, 10.5in}]{geometry} % this resizes margin to stop wasting enormous amount of space (defaults are good for books)
     \\begin{document}
     """
 
@@ -21,6 +22,7 @@ def exam_parts(title="", author=""):
     \\documentclass{exam}
     \\usepackage{amsfonts}""" + magic_incantation_to_allow_polish_letters() + """
     \\usepackage{amsmath,multicol,eso-pic}
+    \\usepackage[a4paper, total={6.5in, 10.5in}]{geometry} % this resizes margin to stop wasting enormous amount of space (defaults are good for books)
     \\noprintanswers
     \\addpoints 
     \\qformat{\\textbf{Question \\\\ \\thequestion}\\quad(\\thepoints)\\hfill}
