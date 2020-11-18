@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import sympy
 from sympy.parsing.sympy_parser import parse_expr
@@ -121,7 +122,7 @@ def make_rational_poly_simplify(var="x"):
 
 
 if __name__ == "__main__":
-    print make_quadratic_eq(["x", "y"])
+    print(make_quadratic_eq(["x", "y"]))
 
 
 

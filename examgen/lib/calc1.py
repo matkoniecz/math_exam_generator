@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import sympy
 from sympy.parsing.sympy_parser import parse_expr
@@ -130,4 +131,4 @@ def make_poly_ratio_limit(var="x", s=[0, 1, 2]):
     return render(e), render(s)
 
 if __name__ == "__main__":
-    print make_poly_ratio_limit(["x", "y"])
+    print(make_poly_ratio_limit(["x", "y"]))

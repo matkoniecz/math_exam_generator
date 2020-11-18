@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 def doc_parts(title="", author=""):
     start="""
     \documentclass{article}
@@ -93,7 +95,7 @@ def problem(instructions, problem, solution, points=1):
     return code
 
 if __name__ == "__main__":
-    print problem("test", "fasd", "asdfasd", 10)
+    print(problem("test", "fasd", "asdfasd", 10))
 
 
 
