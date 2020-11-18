@@ -8,3 +8,6 @@
 /examgen/*.pdf
 *egg-info
 .coverage
+
+*.pdf
+*.tex
