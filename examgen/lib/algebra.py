@@ -79,6 +79,9 @@ def make_linear_eq(x="", rhs = None, var_coeffs=True):
     lhs = c1*x + c2
     rhs = c3*x + c4
     e = sympy.Eq(lhs, rhs)
+    if sympy.solve(e, x) == []:
+        # self contradictory, lets return generator
+        return make_linear_eq(x, rhs, var_coeffs)
     sols = [render(ex, x) for ex in sympy.solve(e, x)]
     return "Solve for $%s$ : %s" % (x, render(e)), sols
 
