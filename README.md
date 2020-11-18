@@ -5,6 +5,8 @@ A Python class that can automatically generate mathematics worksheets/exams, wit
 solution keys, using Sympy and LaTeX. Meant for instructors, tutors, and student
 study groups, etc.
 
+It is a fork of [https://github.com/thearn/examgen](https://github.com/thearn/examgen)
+
 # Requirements
 - Python 2.7 (Python 3 support coming soon)
 - Sympy
