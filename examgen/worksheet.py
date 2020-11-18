@@ -83,7 +83,7 @@ class worksheet(object):
             prob_generator = _problems_map[problem_type]
 
         start, end = section_parts(title, instructions, cols)
-        sol_start, sol_end = section_parts(title, "", cols=1)
+        sol_start, sol_end = section_parts(title, "", cols=3)
         s_probs, s_sols = [], []
         for i in xrange(n):
             p, sols = prob_generator(*args, **kwargs)
