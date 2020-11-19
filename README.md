@@ -120,3 +120,7 @@ myexam.add_section(make_quadratic_eq, 20, "Quadratic equations",
 
 and this will randomly generate the quadratic equation section with problems in the 
 variables x, y, and z.
+
+# Alternative resources
+
+* https://www.homeschoolmath.net/worksheets/
