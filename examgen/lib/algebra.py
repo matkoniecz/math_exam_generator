@@ -76,6 +76,7 @@ def make_linear_eq(prefilled_possible_unknowns=None, rhs = None, var_coeffs=True
     elif isinstance(prefilled_possible_unknowns, list):
         x = random.choice(prefilled_possible_unknowns)
     else:
+        print(prefilled_possible_unknowns)
         raise BaseException("impossible")
 
     exclude = [x.upper(), x.lower()]
