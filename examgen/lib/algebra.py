@@ -5,6 +5,7 @@ from sympy.parsing.sympy_parser import parse_expr
 from sympy.polys.polytools import degree
 import random
 from .helper import alpha, digits_nozero, get_coefficients, render, shuffle
+import translate
 
 def make_quadratic_eq(var="x", rhs = None, integer=[0, 1]):
     """
@@ -88,7 +89,11 @@ def make_linear_eq(prefilled_possible_unknowns=None, rhs = None, var_coeffs=True
         # self contradictory, lets return generator
         return make_linear_eq(prefilled_possible_unknowns, rhs, var_coeffs)
     sols = [render(ex, x) for ex in sympy.solve(e, x)]
-    return "Solve for $%s$ : %s" % (x, render(e)), sols
+    rendered_problem = render(e)
+    problem_with_direction = translate.solve_for(x, (rendered_problem))
+    if var_coeffs == False:
+        problem_with_direction = "%s" % (rendered_problem)
+    return problem_with_direction, sols
 
 def make_rational_poly_simplify(var="x"):
     """
