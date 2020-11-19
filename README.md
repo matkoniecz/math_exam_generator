@@ -123,4 +123,5 @@ variables x, y, and z.
 
 # Alternative resources
 
-* https://www.homeschoolmath.net/worksheets/
+* [https://www.homeschoolmath.net/worksheets/](https://www.homeschoolmath.net/worksheets/)
+* [http://www.math.com/students/worksheet/algebra_sp.htm](http://www.math.com/students/worksheet/algebra_sp.htm)
