@@ -8,7 +8,7 @@ study groups, etc.
 It is a fork of [https://github.com/thearn/examgen](https://github.com/thearn/examgen)
 
 # Requirements
-- Python 2.7 (Python 3 support coming soon)
+- Python 2.7
 - Sympy
 - LaTeX
 
@@ -120,15 +120,3 @@ myexam.add_section(make_quadratic_eq, 20, "Quadratic equations",
 
 and this will randomly generate the quadratic equation section with problems in the 
 variables x, y, and z.
-
-# Goals
-
-Over time, I plan on extending built-in support for problem types from elementary
-algebra and trigonometry through calculus, differential equations, and linear
-algebra (and likely beyond). I'm also planning on extending support for generating
-exams from static sets of problems (rather than purely generated ones). This could
-be very helpful for graduate level material or qualifier exam prep.
-
-A no-installation GUI application (build using pyinstaller) would also be helpful
-for educators who don't have much experience in Python or CLI.
-
