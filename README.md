@@ -125,3 +125,6 @@ variables x, y, and z.
 
 * [https://www.homeschoolmath.net/worksheets/](https://www.homeschoolmath.net/worksheets/)
 * [http://www.math.com/students/worksheet/algebra_sp.htm](http://www.math.com/students/worksheet/algebra_sp.htm)
+* [https://www.math-aids.com/](https://www.math-aids.com/)
+* [https://github.com/lukew3/mathgenerator](https://github.com/lukew3/mathgenerator)
+* [http://www.math-exercises.com/equations-and-inequalities](http://www.math-exercises.com/equations-and-inequalities)
