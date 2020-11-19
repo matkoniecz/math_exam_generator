@@ -87,7 +87,7 @@ def make_linear_eq(prefilled_possible_unknowns=None, rhs = None, var_coeffs=True
     e = sympy.Eq(lhs, rhs)
     if sympy.solve(e, x) == []:
         # self contradictory, lets return generator
-        return make_linear_eq(x, rhs, var_coeffs)
+        return make_linear_eq(prefilled_possible_unknowns, rhs, var_coeffs)
     sols = [render(ex, x) for ex in sympy.solve(e, x)]
     return "Solve for $%s$ : %s" % (x, render(e)), sols
 
